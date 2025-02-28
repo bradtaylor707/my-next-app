@@ -1,6 +1,6 @@
-import { getUsers } from "@/app/data-access/users";
+import { getUsers } from "@/data-access/users";
 
-export default async function Users() {
+export default async function Page() {
   const users = await getUsers();
 
   return (

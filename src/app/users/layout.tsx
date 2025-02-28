@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import BackButton from "@/app/components/back-button";
+import BackButton from "@/components/back-button";
 
 export default function Layout({ children }: Readonly<{ children: ReactNode }>) {
   return (
