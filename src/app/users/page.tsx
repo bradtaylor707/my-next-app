@@ -1,4 +1,5 @@
 import { getUsers } from "@/data-access/users";
+import Link from "next/link";
 
 export default async function Page() {
   const users = await getUsers();
@@ -11,7 +12,7 @@ export default async function Page() {
           {users.map((user) => {
             return (
               <div key={user} className={"user"}>
-                {user}
+                <Link href={`/users/${user}`}>{user}</Link>
               </div>
             );
           })}
